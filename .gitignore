@@ -1,0 +1,16 @@
+venv/ 
+#整个venv目录
+
+#忽略所有.pyc文件（python字节码缓存）
+__pycache__/
+*.pyc
+
+
+#忽略存储API密钥等敏感信息的文件
+.env
+secrets.py
+
+
+#忽略操作系统生成的文件
+.DS_Store
+Thumbs.db
