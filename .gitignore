@@ -1,25 +1,42 @@
-# Python虚拟环境
+# 虚拟环境
 .venv/
 venv/
 
-# 向量数据库目录
+# 向量数据库和大型数据文件
 vector_db/
+*.bin
+*.sqlite3
 
-# Python字节码缓存
+# Python 字节码缓存
 __pycache__/
 *.pyc
+*.pyo
 
-# 敏感信息文件
+# 敏感信息
 .env
 secrets.py
+config.ini
 
 # 操作系统生成的文件
 .DS_Store
 Thumbs.db
 
-# 其他可能产生的文件，比如日志、缓存等
+# IDE 和编辑器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 日志文件
 *.log
+logs/
+
+# 测试相关
 .pytest_cache/
-*.egg-info/
-build/
+.coverage
+htmlcov/
+
+# 打包和分发
 dist/
+build/
+*.egg-info/
