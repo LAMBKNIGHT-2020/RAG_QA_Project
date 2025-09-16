@@ -1,16 +1,25 @@
-venv/ 
-#整个venv目录
+# Python虚拟环境
+.venv/
+venv/
 
-#忽略所有.pyc文件（python字节码缓存）
+# 向量数据库目录
+vector_db/
+
+# Python字节码缓存
 __pycache__/
 *.pyc
 
-
-#忽略存储API密钥等敏感信息的文件
+# 敏感信息文件
 .env
 secrets.py
 
-
-#忽略操作系统生成的文件
+# 操作系统生成的文件
 .DS_Store
 Thumbs.db
+
+# 其他可能产生的文件，比如日志、缓存等
+*.log
+.pytest_cache/
+*.egg-info/
+build/
+dist/
